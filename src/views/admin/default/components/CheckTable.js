@@ -61,7 +61,7 @@ export default function CheckTable(props) {
           fontSize='22px'
           fontWeight='700'
           lineHeight='100%'>
-          Check Table
+          Total rewards
         </Text>
         <Menu />
       </Flex>
@@ -94,14 +94,9 @@ export default function CheckTable(props) {
               <Tr {...row.getRowProps()} key={index}>
                 {row.cells.map((cell, index) => {
                   let data = "";
-                  if (cell.column.Header === "NAME") {
+                  if (cell.column.Header === "ADDRESS") {
                     data = (
                       <Flex align='center'>
-                        <Checkbox
-                          defaultChecked={cell.value[1]}
-                          colorScheme='brandScheme'
-                          me='10px'
-                        />
                         <Text color={textColor} fontSize='sm' fontWeight='700'>
                           {cell.value[0]}
                         </Text>
@@ -119,7 +114,7 @@ export default function CheckTable(props) {
                         </Text>
                       </Flex>
                     );
-                  } else if (cell.column.Header === "QUANTITY") {
+                  } else if (cell.column.Header === "COMPUTING POWER") {
                     data = (
                       <Text color={textColor} fontSize='sm' fontWeight='700'>
                         {cell.value}

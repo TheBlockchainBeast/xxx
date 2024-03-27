@@ -13,8 +13,8 @@ import routes from 'routes.js';
 export default function Dashboard(props) {
 	const { ...rest } = props;
 	// states and functions
-	const [ fixed ] = useState(false);
-	const [ toggleSidebar, setToggleSidebar ] = useState(false);
+	const [fixed] = useState(false);
+	const [toggleSidebar, setToggleSidebar] = useState(false);
 	// functions for changing the states from components
 	const getRoute = () => {
 		return window.location.pathname !== '/admin/full-screen-maps';
@@ -126,7 +126,7 @@ export default function Dashboard(props) {
 							<Box>
 								<Navbar
 									onOpen={onOpen}
-									logoText={'Horizon UI Dashboard PRO'}
+									logoText={'XXX'}
 									brandText={getActiveRoute(routes)}
 									secondary={getActiveNavbar(routes)}
 									message={getActiveNavbarText(routes)}

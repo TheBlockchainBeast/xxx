@@ -79,7 +79,7 @@ export default function UserReports() {
               }
             />
           }
-          name='Earnings'
+          name='Total Rewards'
           value='$350.4'
         />
         <MiniStatistics
@@ -115,7 +115,7 @@ export default function UserReports() {
               </Select>
             </Flex>
           }
-          name='Your balance'
+          name='Mean Efficiency'
           value='$1,000'
         />
         <MiniStatistics

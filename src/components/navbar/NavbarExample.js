@@ -130,7 +130,7 @@ export default function AuthNavbar(props) {
           <Box
             w='1px'
             h='20px'
-            //  bg={useColorModeValue("gray.700", "white")}
+          //  bg={useColorModeValue("gray.700", "white")}
           />
         </Stack>
         <Text fontsize='sm' mt='3px'>
@@ -560,7 +560,7 @@ export default function AuthNavbar(props) {
             />
           </Box>
           {linksAuth}
-          <Link href='https://www.horizon-ui.com/pro'>
+          <Link href='#'>
             <Button
               bg={bgButton}
               color={colorButton}
